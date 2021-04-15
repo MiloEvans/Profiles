@@ -1,0 +1,15 @@
+#!name=𝐒𝐮𝐛-𝐒𝐭𝐨𝐫𝐞 & 𝐁𝐨𝐱𝐉𝐬
+#!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
+
+[Script]
+# > 𝐒𝐮𝐛-𝐒𝐭𝐨𝐫𝐞
+# https://sub.store
+Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,requires-body=1,max-size=131072,timeout=120,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,script-update-interval=0
+Sub-Store 自动同步 = type=cron,cronexp="35 */4 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/scripts/cron-sync-artifacts.js,script-update-interval=0
+
+# > 𝐁𝐨𝐱𝐉𝐬
+# http://boxjs.net
+Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.net,requires-body=1,timeout=120,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,script-update-interval=0
+
+[MITM]
+hostname= %APPEND% sub.store

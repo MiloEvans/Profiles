@@ -1,0 +1,10 @@
+#!name=𝐁𝐞𝐚𝐫
+#!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
+#!system=
+
+[Script]
+# 先试用订阅再取消订阅
+verify_receipt = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/verify_receipt.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com

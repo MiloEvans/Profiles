@@ -1,0 +1,59 @@
+#!name=𝐆𝐞𝐧𝐞𝐫𝐚𝐥
+#!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
+#!system=ios
+
+[Rule]
+# > 去广告
+# >> 京东 去启动广告
+# hostname = api.m.jd.com
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+
+[Script]
+# > 去广告
+# >> 微信公众号
+# hostname = mp.weixin.qq.com
+𝐀𝐃-微信公众号 = type=http-response,requires-body=1,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+
+# >> 小程序纸塘&森图壁纸下载去广告
+# hostname = api.bspapp.com
+𝐀𝐃-纸塘&森图壁纸 = type=http-response,pattern=https://api.bspapp.com/client,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/zhitang%26sentubizhiAD.js,script-update-interval=0
+
+# > 𝐲𝐢𝐜𝐡𝐚𝐡𝐮𝐜𝐡𝐚
+# > 京东比价、淘宝比价、奈飞评分
+# >> 京东比价
+# hostname = api.m.jd.com
+京东比价 = type=http-response,pattern=https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
+
+# >> 淘宝比价
+# 不生效或失效的需要卸载 𝐭𝐛 重装，注意不开脚本进 𝐭𝐛 会失效
+# hostname = trade-acs.m.taobao.com
+淘宝比价 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,type=http-request,pattern=^http://.+/amdc/mobileDispatch
+淘宝比价 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail
+
+# >> 奈飞评分
+# hostname = ios.prod.ftl.netflix.com
+奈飞评分 = script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+奈飞评分 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+# >> 奈飞单集评分
+奈飞单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
+
+# > 破解
+# >> 微信阅读无限卡
+# hostname = i.weread.qq.com
+微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/weread.js
+
+# > 其它
+# >> 微信跳转
+# hostname = weixin110.qq.com
+微信跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js,script-update-interval=0
+
+# >> AQI-US
+# hostname = weather-data.apple.com
+AQI-US = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/iOS_Weather_AQI_Standard.js,script-update-interval=0
+
+# >> bilibili 开启 1080P+
+# hostname = api.bilibili.com
+BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, mp.weixin.qq.com, api.bspapp.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, i.weread.qq.com, weixin110.qq.com, weather-data.apple.com, api.bilibili.com
