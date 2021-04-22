@@ -79,6 +79,10 @@
 # >>> 活动入口：首页--京东汽车--屏幕右中部--车主福利
 京东汽车 = type=cron,cronexp="30 10 7 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car.js,script-update-interval=0
 
+# >> 东东健康社区 {0-23/4:10}
+# >>> 活动入口：京东APP首页搜索 "玩一玩"即可
+东东健康社区 = type=cron,cronexp="0 10 0-23/4 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_health.js,script-update-interval=0
+
 # >> 口袋书店
 口袋书店 = type=cron,cronexp="0 1 8,12,18 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bookshop.js,script-update-interval=0
 
