@@ -83,6 +83,9 @@
 # >>> 活动入口：京东APP首页搜索 "玩一玩"即可
 东东健康社区 = type=cron,cronexp="0 10 0-23/4 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_health.js,script-update-interval=0
 
+# >> 东东健康社区收集能量 {*:5-45/20}
+东东健康社区收集能量 = type=cron,cronexp="0 5-45/20 * * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_health_collect.js,script-update-interval=0
+
 # >> 口袋书店
 口袋书店 = type=cron,cronexp="0 1 8,12,18 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bookshop.js,script-update-interval=0
 
@@ -99,6 +102,8 @@
 环球挑战赛 = type=cron,cronexp="0 0 9 8-31 3 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_global.js,script-update-interval=0
 # >> 女装盲盒（04-01 ～ 04-31）
 女装盲盒 = type=cron,cronexp="0 20 1,23 1-31 4 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_nzmh.js,script-update-interval=0
+# >> 幸运大转盘（未知）
+幸运大转盘 = type=cron,cronexp="0 4 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_market_lottery.js,script-update-interval=0
 
 # > 非京豆任务
 # >> 东东萌宠 {06:08 12:08 18:08} 
