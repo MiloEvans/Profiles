@@ -117,7 +117,7 @@
 # >> 天天提鹅 {*/3:14}
 天天提鹅 = type=cron,cronexp="0 14 */3 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_daily_egg.js,script-update-interval=0
 # >> 东东工厂 {*:16}
-//东东工厂 = type=cron,cronexp="30 16 * * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdfactory.js,script-update-interval=0
+# 东东工厂 = type=cron,cronexp="30 16 * * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdfactory.js,script-update-interval=0
 # >> 京喜工厂 {*/3:18}
 京喜工厂 = type=cron,cronexp="10 18 */3 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_dreamFactory.js,script-update-interval=0
 # >> 京喜农场 {9,12,18:00}
@@ -137,7 +137,7 @@
 # >> 获取互助码
 获取互助码 = type=cron,cronexp="0 1 1 1 1 *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_get_share_code.js,script-update-interval=0
 # >> 京东京豆变动 {09:30}
-//京豆变动通知 = type=cron,cronexp="30 0 9 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_change.js,script-update-interval=0
+# 京豆变动通知 = type=cron,cronexp="30 0 9 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_change.js,script-update-interval=0
 # >> 京东价格提醒 {*/6:02::30}
 京东价格提醒 = type=cron,cronexp="30 2 */6 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js,script-update-interval=0
 # >> 京东保价 {00:27}
