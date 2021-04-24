@@ -42,21 +42,25 @@ URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-
 # hostname = i.weread.qq.com
 微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/weread.js
 
+# >> bilibili 开启 1080P+
+# hostname = api.bilibili.com
+BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js,script-update-interval=0
+
+# >> 百度云会员
+# hostname = pan.baidu.com
+//百度云会员 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
+
 # > 其它
 # >> 微信跳转
 # hostname = weixin110.qq.com
 微信跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js,script-update-interval=0
 
 # >> 机场流量
-# Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,script-update-interval=0
+//Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,script-update-interval=0
 
 # >> AQI-US
 # hostname = weather-data.apple.com
 AQI-US = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/iOS_Weather_AQI_Standard.js,script-update-interval=0
 
-# >> bilibili 开启 1080P+
-# hostname = api.bilibili.com
-BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js,script-update-interval=0
-
 [MITM]
-hostname = %APPEND% api.m.jd.com, mp.weixin.qq.com, api.bspapp.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, i.weread.qq.com, weixin110.qq.com, weather-data.apple.com, api.bilibili.com
+hostname = %APPEND% api.m.jd.com, mp.weixin.qq.com, api.bspapp.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, weixin110.qq.com, weather-data.apple.com
