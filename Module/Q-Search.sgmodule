@@ -11,8 +11,9 @@
 # gm: Google 图片搜索
 # bk: 百度百科
 # wk: 维基百科
-# jl: javlibrary
 # qd: 起点
+# jl: javlibrary
+# jd: JavDB
 
 # > 翻译
 # yd: 有道词典搜索
@@ -65,11 +66,14 @@
 # wk 维基百科
 ^https:\/\/duckduckgo.com\/\?q=wk(\+|%20)([^&]+).* https://zh.m.wikipedia.org/wiki/$2 302
 
+# qd 起点
+^https:\/\/duckduckgo.com\/\?q=qd(\+|%20)([^&]+).* https://m.qidian.com/search?kw=$2 302
+
 # jl javlibrary
 ^https:\/\/duckduckgo.com\/\?q=jl(\+|%20)([^&]+).* http://www.javlibrary.com/cn/vl_searchbyid.php?keyword=$2 302
 
-# qd 起点
-^https:\/\/duckduckgo.com\/\?q=qd(\+|%20)([^&]+).* https://m.qidian.com/search?kw=$2 302
+# jd JavDB
+^https:\/\/duckduckgo.com\/\?q=jd(\+|%20)([^&]+).* https://javdb.com/search?q=$2 302
 
 # > 翻译
 # yd 有道
