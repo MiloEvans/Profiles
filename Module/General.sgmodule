@@ -61,5 +61,9 @@ BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\
 # hostname = weather-data.apple.com
 AQI-US = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/iOS_Weather_AQI_Standard.js,script-update-interval=0
 
+# >> bilibili 自动换区
+# hostname = ap?.bilibili.com
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js,script-update-interval=0
+
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com
+hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com
