@@ -106,6 +106,8 @@
 幸运大转盘 = type=cron,cronexp="0 4 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_market_lottery.js,script-update-interval=0
 # >> 球队赢好礼（未知）
 球队赢好礼 = type=cron,cronexp="0 10 16 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_tcl.js,script-update-interval=0
+# >> 每日抽奖（05-01 ～ 05-31）
+每日抽奖 = type=cron,cronexp="0 13 1,22,23 1-31 5 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_daily_lottery.js,script-update-interval=0
 
 # > 非京豆任务
 # >> 东东萌宠 {06:08 12:08 18:08} 
