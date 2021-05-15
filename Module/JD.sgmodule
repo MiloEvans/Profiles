@@ -94,14 +94,8 @@
 京小兑 = type=cron,cronexp="0 30 8,16,20 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js,script-update-interval=0
 
 # > 临时活动
-# >> 京东国际盲盒 (02-23 ~ 03-31)
-京东国际盲盒 = type=cron,cronexp="10 0 9,12,20,21 1-31 3 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_global_mh.js,script-update-interval=0
 # >> 闪购盲盒
 闪购盲盒 = type=cron,cronexp="0 20 8 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_sgmh.js,script-update-interval=0
-# >> 环球挑战赛（03-08 ～ 03-31）
-环球挑战赛 = type=cron,cronexp="0 0 9 8-31 3 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_global.js,script-update-interval=0
-# >> 女装盲盒（04-01 ～ 04-31）
-女装盲盒 = type=cron,cronexp="0 20 1,23 1-31 4 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_nzmh.js,script-update-interval=0
 # >> 幸运大转盘（未知）
 幸运大转盘 = type=cron,cronexp="0 4 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_market_lottery.js,script-update-interval=0
 # >> 球队赢好礼（未知）
