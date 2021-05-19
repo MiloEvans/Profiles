@@ -10,9 +10,10 @@ Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,requires-body=1,max
 # > 𝐁𝐨𝐱𝐉𝐬
 # http://boxjs.net
 Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.net,requires-body=1,timeout=120,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,script-update-interval=0
-# > 𝐁𝐨𝐱𝐉𝐬 备份
+# > 𝐁𝐨𝐱𝐉𝐬 备份 & 恢复
+# 先订阅 DomplingYaYa 的 𝐁𝐨𝐱𝐉𝐬
+# https://raw.githubusercontent.com/dompling/Script/master/dompling.boxjs.json
 𝐁𝐨𝐱𝐉𝐬 备份 = type=cron,cronexp="0 20 21 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js,script-update-interval=0
-# > 𝐁𝐨𝐱𝐉𝐬 恢复
 # 𝐁𝐨𝐱𝐉𝐬 恢复 = type=cron,cronexp="0 0 0 * 1 *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js,script-update-interval=0
 
 [MITM]
