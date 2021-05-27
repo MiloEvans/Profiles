@@ -112,6 +112,9 @@
 1城城领现金 = type=cron,cronexp="0 0 0-23/1 25-31 5 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_city.js,script-update-interval=0
 # >> 城城领现金（05-25 ～ 06-03）
 2城城领现金 = type=cron,cronexp="0 0 0-23/1 1-3 6 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_city.js,script-update-interval=0
+# >> 家电星推官（05-27 ～ 06-18）
+1家电星推官 = type=cron,cronexp="0 0 0 27-31 5 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js,script-update-interval=0
+2家电星推官 = type=cron,cronexp="0 0 0 1-18 6 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js,script-update-interval=0
 
 # > 非京豆任务
 # >> 东东萌宠 {06:08 12:08 18:08} 
