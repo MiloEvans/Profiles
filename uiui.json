@@ -2,7 +2,7 @@
 "sourceType":0,
 "sourceUrl":"书源URL",
 "bookInfoPattern":"书籍URL正则",
-"header":"{\n  \"User-Agent\" : \"User-Agent\"\n}",
+"header":"",
 "ruleBookInfo":{"infoInit":"详情预处理规则",
 "infoAuthor":"详情作者",
 "infoCoverUrl":"详情封面",
