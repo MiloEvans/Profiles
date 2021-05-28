@@ -26,7 +26,6 @@
 "exploreKind":"发现分类",
 "exploreLastChapter":"发现最新章节",
 "exploreName":"发现书名"},
-"searchUrl":"搜索地址规则"
 "ruleSearch":{"searchAuthor":"搜索作者",
 "searchBookList":"搜索书籍列表",
 "searchBookUrl":"搜索书籍详情页URL",
@@ -41,4 +40,5 @@
 "tocUrl":"目录章节URL",
 "isVip":"目录VIP标识",
 "nextTocUrl":"目录下一页",
-"tocUpdateTime":"目录更新时间"},}]
+"tocUpdateTime":"目录更新时间"},
+"searchUrl":"搜索地址规则"}]
