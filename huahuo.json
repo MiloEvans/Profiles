@@ -37,7 +37,7 @@
 "exploreName":"发现书名"
 },
 
-"searchUrl":"搜索地址规则"
+"searchUrl":"搜索地址规则",
 "ruleSearch":{
 "searchAuthor":"搜索作者",
 "searchBookList":"搜索书籍列表",
@@ -57,5 +57,5 @@
 "isVip":"目录VIP标识",
 "nextTocUrl":"目录下一页",
 "tocUpdateTime":"目录更新时间"
-},
+}
 }]
