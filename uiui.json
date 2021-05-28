@@ -1,5 +1,4 @@
-[{
-"sourceName":"书源名称",
+[{"sourceName":"书源名称",
 "sourceType":0,
 "sourceUrl":"书源URL",
 "bookInfoPattern":"书籍URL正则",
@@ -57,5 +56,4 @@
 "isVip":"目录VIP标识",
 "nextTocUrl":"目录下一页",
 "tocUpdateTime":"目录更新时间"
-},
-}]
+},}]
