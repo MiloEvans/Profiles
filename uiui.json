@@ -3,7 +3,6 @@
 "sourceUrl":"书源URL",
 "bookInfoPattern":"书籍URL正则",
 "header":"{\n  \"User-Agent\" : \"User-Agent\"\n}",
-
 "ruleBookInfo":{"infoInit":"详情预处理规则",
 "infoAuthor":"详情作者",
 "infoCoverUrl":"详情封面",
@@ -13,13 +12,11 @@
 "infoName":"详情书名",
 "infoTocUrl":"详情目录地址URL",
 "infoWordCount":"详情字数"},
-
 "ruleContent":{"content":"正文规则",
 "nextContentUrl":"正文下一页URL",
 "webJs":"正文网页脚本",
 "sourceRegex":"正文资源正则",
 "replaceRegex":"正文替换规则"},
-
 "exploreUrl":"发现地址规则",
 "ruleExplore":{"exploreAuthor":"发现作者",
 "exploreBookList":"发现书籍列表",
@@ -29,7 +26,6 @@
 "exploreKind":"发现分类",
 "exploreLastChapter":"发现最新章节",
 "exploreName":"发现书名"},
-
 "searchUrl":"搜索地址规则"
 "ruleSearch":{"searchAuthor":"搜索作者",
 "searchBookList":"搜索书籍列表",
@@ -40,7 +36,6 @@
 "searchLastChapter":"搜索最新章节",
 "searchName":"搜索书名",
 "searchWordCount":"搜到字数"},
-
 "ruleToc":{"tocList":"目录列表",
 "tocName":"目录章节名",
 "tocUrl":"目录章节URL",
