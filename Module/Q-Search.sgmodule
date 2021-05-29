@@ -12,6 +12,7 @@
 # bk: 百度百科
 # wk: 维基百科
 # qd: 起点
+# ys: 优书网
 # jl: javlibrary
 # jd: JavDB
 
@@ -68,6 +69,9 @@
 
 # qd 起点
 ^https:\/\/duckduckgo.com\/\?q=qd(\+|%20)([^&]+).* https://m.qidian.com/search?kw=$2 302
+
+# ys 优书网
+^https:\/\/duckduckgo.com\/\?q=ys(\+|%20)([^&]+).* https://www.yousuu.com/search/?search_type=title&search_value=$2&from=search 302
 
 # jl javlibrary
 ^https:\/\/duckduckgo.com\/\?q=jl(\+|%20)([^&]+).* http://www.javlibrary.com/cn/vl_searchbyid.php?keyword=$2 302
