@@ -1,0 +1,74 @@
+#!name=𝐆𝐞𝐧𝐞𝐫𝐚𝐥
+#!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
+#!system=ios
+
+[Rule]
+# > 去广告
+# >> 京东 去启动广告
+# hostname = api.m.jd.com
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+
+[Script]
+# > 去广告
+# >> 微信公众号
+# hostname = mp.weixin.qq.com
+𝐀𝐃-微信公众号 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0
+
+# >> 小程序纸塘&森图壁纸下载去广告
+# hostname = api.bspapp.com
+𝐀𝐃-纸塘&森图壁纸 = type=http-response,pattern=https://api.bspapp.com/client,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/zhitang%26sentubizhiAD.js,script-update-interval=0
+
+# > 破解
+# >> 微信阅读无限卡
+# hostname = i.weread.qq.com
+微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/weread.js,script-update-interval=0
+
+# >> bilibili 开启 1080P+
+# hostname = api.bilibili.com
+BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js,script-update-interval=0
+
+# >> 百度云会员
+# hostname = pan.baidu.com
+百度云会员 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
+
+# > 其它
+# >> 京东比价
+# hostname = api.m.jd.com
+京东比价 = type=http-response,pattern=https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
+
+# >> 淘宝比价
+# 不生效或失效的需要卸载 𝐭𝐛 重装，注意不开脚本进 𝐭𝐛 会失效
+# hostname = trade-acs.m.taobao.com
+淘宝比价 = type=http-request,pattern=^http://.+/amdc/mobileDispatch,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
+淘宝比价 = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
+
+# >> 奈飞评分
+# hostname = ios-h2.prod.ftl.netflix.com
+奈飞评分 = type=http-request,pattern=^https?://ios-h2\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,script-update-interval=0
+奈飞评分 = type=http-response,pattern=^https?://ios-h2\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,script-update-interval=0
+# >> 奈飞单集评分
+奈飞单集评分 = type=http-response,pattern=^https?://ios-h2\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js,script-update-interval=0
+
+# >> 微信跳转
+# hostname = weixin110.qq.com
+微信跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js,script-update-interval=0
+
+# >> 机场流量
+# Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,script-update-interval=0
+
+# >> AQI-US
+# hostname = weather-data.apple.com
+AQI-US = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Surge/master/Script/iOS_Weather_AQI_Standard.js,script-update-interval=0
+
+# >> bilibili 自动换区
+# hostname = ap?.bilibili.com
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js,script-update-interval=0
+# >> bilibili 搜索指定地区 搜索框添加后缀" 港", " 台", " 中". 例如: 进击的巨人 港
+Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js,script-update-interval=0
+
+# >> 淘票票豆瓣评分
+# hostname = guide-acs.m.taobao.com
+淘票票豆瓣评分 = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/TaoPiaoPiao/taopiaopiao.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com, guide-acs.m.taobao.com
