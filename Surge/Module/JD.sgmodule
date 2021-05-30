@@ -62,9 +62,6 @@
 # >> 签到领现金 {00:08}
 签到领现金 = type=cron,cronexp="30 8 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_cash.js,script-update-interval=0
 
-# >> 京喜签到 {00:09}
-京喜签到 = type=cron,cronexp="0 9 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jx_sign.js,script-update-interval=0
-
 # >> 天天加速 {1-23/2:05}
 天天加速 = type=cron,cronexp="0 5 1-23/2 1-20 4 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_speed.js,script-update-interval=0
 
@@ -89,17 +86,11 @@
 # >> 口袋书店
 口袋书店 = type=cron,cronexp="0 1 8,12,18 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bookshop.js,script-update-interval=0
 
-# >> 京小兑
-# >>> 活动入口：微信小程序--京小兑
-京小兑 = type=cron,cronexp="0 30 8,16,20 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js,script-update-interval=0
-
 # > 临时活动
 # >> 闪购盲盒
 闪购盲盒 = type=cron,cronexp="0 20 8 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_sgmh.js,script-update-interval=0
 # >> 幸运大转盘（未知）
 幸运大转盘 = type=cron,cronexp="0 4 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_market_lottery.js,script-update-interval=0
-# >> 球队赢好礼（未知）
-球队赢好礼 = type=cron,cronexp="0 10 16 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_tcl.js,script-update-interval=0
 # >> 每日抽奖（05-01 ～ 05-31）
 每日抽奖 = type=cron,cronexp="0 13 1,22,23 1-31 5 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_daily_lottery.js,script-update-interval=0
 # >> 跳跳乐瓜分京豆（未知）
