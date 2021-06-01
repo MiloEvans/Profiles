@@ -16,12 +16,12 @@ URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-
 
 # >> 小程序纸塘&森图壁纸下载去广告
 # hostname = api.bspapp.com
-𝐀𝐃-纸塘&森图壁纸 = type=http-response,pattern=https://api.bspapp.com/client,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Script/zhitang%26sentubizhiAD.js,script-update-interval=0
+𝐀𝐃-纸塘&森图壁纸 = type=http-response,pattern=https://api.bspapp.com/client,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/zhitang%26sentubizhiAD.js,script-update-interval=0
 
 # > 破解
 # >> 微信阅读无限卡
 # hostname = i.weread.qq.com
-微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Script/weread.js,script-update-interval=0
+微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/weread.js,script-update-interval=0
 
 # >> bilibili 开启 1080P+
 # hostname = api.bilibili.com
@@ -58,7 +58,7 @@ BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\
 
 # >> AQI-US
 # hostname = weather-data.apple.com
-AQI-US = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Script/iOS_Weather_AQI_Standard.js,script-update-interval=0
+AQI-US = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/iOS_Weather_AQI_Standard.js,script-update-interval=0
 
 # >> bilibili 自动换区
 # hostname = ap?.bilibili.com
