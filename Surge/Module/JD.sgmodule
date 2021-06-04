@@ -108,6 +108,8 @@
 5G超级盲盒 = type=cron,cronexp="0 0 0,1-23/3 * 6,7 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js,script-update-interval=0
 # >> 超级直播间红包雨（06-04 ～ 06-11）
 超级直播间红包雨 = type=cron,cronexp="0 0 18 4-11 6 *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live_redrain.js,script-update-interval=0
+# >> 新潮品牌狂欢（未知）
+新潮品牌狂欢 = type=cron,cronexp="0 4 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mcxhd.js,script-update-interval=0
 
 # > 非京豆任务
 # >> 东东萌宠 {06:08 12:08 18:08} 
