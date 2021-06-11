@@ -29,6 +29,10 @@ BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\
 # hostname = pan.baidu.com
 百度云会员 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
 
+# >> Emby 破解
+hostname = mb3admin.com
+EmbyPremiere = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/rartv/SurgeScript/main/EmbyPremiere/EmbyPremiere.js,script-update-interval=0
+
 # > 其它
 # >> 京东比价
 # hostname = api.m.jd.com
@@ -69,4 +73,4 @@ Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/s
 淘票票豆瓣评分 = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/TaoPiaoPiao/taopiaopiao.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com, guide-acs.m.taobao.com
+hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com, guide-acs.m.taobao.com
