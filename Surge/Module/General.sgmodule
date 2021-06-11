@@ -2,6 +2,11 @@
 #!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
 #!system=ios
 
+[Rule]
+# > 去广告
+# >> 优酷视频去片头广告
+URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
+
 [Script]
 # > 去广告
 # >> 微信公众号
@@ -71,6 +76,9 @@ Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/s
 # >> 淘票票豆瓣评分
 # hostname = guide-acs.m.taobao.com
 淘票票豆瓣评分 = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/TaoPiaoPiao/taopiaopiao.js,script-update-interval=0
+
+[General]
+force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
 [MITM]
 hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com, guide-acs.m.taobao.com
