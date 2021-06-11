@@ -26,10 +26,6 @@ BaiduChangeUA = type=http-request,pattern=^https?:\/\/(?!d\.pcs).*(?<!map)\.baid
 # hostname = i.weread.qq.com
 微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/weread.js,script-update-interval=0
 
-# >> bilibili 开启 1080P+
-# hostname = api.bilibili.com
-BilibiliHD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js,script-update-interval=0
-
 # >> 百度云会员
 # hostname = pan.baidu.com
 百度云会员 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
@@ -73,12 +69,8 @@ Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc
 # >> bilibili 搜索指定地区 搜索框添加后缀" 港", " 台", " 中". 例如: 进击的巨人 港
 Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js,script-update-interval=0
 
-# >> 淘票票豆瓣评分
-# hostname = guide-acs.m.taobao.com
-淘票票豆瓣评分 = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/TaoPiaoPiao/taopiaopiao.js,script-update-interval=0
-
 [General]
 force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com, guide-acs.m.taobao.com
+hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com
