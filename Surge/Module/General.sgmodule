@@ -2,12 +2,6 @@
 #!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
 #!system=ios
 
-[Rule]
-# > 去广告
-# >> 京东 去启动广告
-# hostname = api.m.jd.com
-URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
-
 [Script]
 # > 去广告
 # >> 微信公众号
