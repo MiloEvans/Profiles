@@ -12,6 +12,10 @@
 # hostname = api.bspapp.com
 𝐀𝐃-纸塘&森图壁纸 = type=http-response,pattern=https://api.bspapp.com/client,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/zhitang%26sentubizhiAD.js,script-update-interval=0
 
+# >> 百度（全站替换为手机百度 Quark 的 User-Agent）
+# hostname = *.baidu.com
+BaiduChangeUA = type=http-request,pattern=^https?:\/\/(?!d\.pcs).*(?<!map)\.baidu\.com,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/BaiduChangeUA.js,script-update-interval=0
+
 # > 破解
 # >> 微信阅读无限卡
 # hostname = i.weread.qq.com
@@ -65,4 +69,4 @@ Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/s
 淘票票豆瓣评分 = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/TaoPiaoPiao/taopiaopiao.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com, guide-acs.m.taobao.com
+hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, api.bilibili.com, pan.baidu.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com, guide-acs.m.taobao.com
