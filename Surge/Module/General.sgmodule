@@ -11,11 +11,11 @@ URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 # > 去广告
 # >> 微信公众号
 # hostname = mp.weixin.qq.com
-𝐀𝐃-微信公众号 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0
+微信公众号去广告 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0
 
 # >> 小程序纸塘&森图壁纸下载去广告
 # hostname = api.bspapp.com
-𝐀𝐃-纸塘&森图壁纸 = type=http-response,pattern=https://api.bspapp.com/client,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/zhitang%26sentubizhiAD.js,script-update-interval=0
+纸塘&森图壁纸 = type=http-response,pattern=https://api.bspapp.com/client,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/zhitang%26sentubizhiAD.js,script-update-interval=0
 
 # >> 百度（全站替换为手机百度 Quark 的 User-Agent）
 # hostname = *.baidu.com
@@ -40,7 +40,7 @@ EmbyPremiere = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/servi
 京东比价 = type=http-response,pattern=https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
 
 # >> 淘宝比价
-# 不生效或失效的需要卸载 𝐭𝐛 重装，注意不开脚本进 𝐭𝐛 会失效
+# 不生效或失效的需要卸载淘宝重装，注意不开脚本进淘宝会失效
 # hostname = trade-acs.m.taobao.com
 淘宝比价 = type=http-request,pattern=^http://.+/amdc/mobileDispatch,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
 淘宝比价 = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
