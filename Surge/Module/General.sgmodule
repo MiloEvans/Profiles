@@ -59,9 +59,9 @@ EmbyPremiere = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/servi
 # >> 机场流量
 # Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,script-update-interval=0
 
-# >> AQI-US
+# >> iOS15美标空气质量
 # hostname = weather-data.apple.com
-AQI-US = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/iOS_Weather_AQI_Standard.js,script-update-interval=0
+iOS15美标空气质量 = type=http-response,pattern=https://weather-data.apple.com/v2/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/iOS15_Weather_AQI_US.js,script-update-interval=0
 
 # >> bilibili 自动换区
 # hostname = ap?.bilibili.com
