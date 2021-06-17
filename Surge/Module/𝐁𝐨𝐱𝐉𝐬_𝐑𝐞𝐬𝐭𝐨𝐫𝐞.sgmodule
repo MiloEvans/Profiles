@@ -1,0 +1,7 @@
+#!name=𝐁𝐨𝐱𝐉𝐬 𝐑𝐞𝐬𝐭𝐨𝐫𝐞
+#!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
+
+[Script]
+# 先订阅 DomplingYaYa 的 BoxJs
+# https://raw.githubusercontent.com/dompling/Script/master/dompling.boxjs.json
+BoxJs 恢复 = type=cron,cronexp="0 30 21 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js,script-update-interval=0
