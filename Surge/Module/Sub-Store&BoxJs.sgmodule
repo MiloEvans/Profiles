@@ -5,7 +5,7 @@
 # > Sub-Store
 # https://sub.store
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,requires-body=1,max-size=131072,timeout=120,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,script-update-interval=0
-# Sub-Store 自动同步 = type=cron,cronexp="35 */4 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/scripts/cron-sync-artifacts.js,script-update-interval=0
+// Sub-Store 自动同步 = type=cron,cronexp="35 */4 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/scripts/cron-sync-artifacts.js,script-update-interval=0
 
 # > BoxJs
 # http://boxjs.net
@@ -14,7 +14,7 @@ Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.net,requires-body=1,t
 # 先订阅 DomplingYaYa 的 BoxJs
 # https://raw.githubusercontent.com/dompling/Script/master/dompling.boxjs.json
 BoxJs 备份 = type=cron,cronexp="0 20 21 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js,script-update-interval=0
-# BoxJs 恢复 = type=cron,cronexp="0 0 0 * 1 *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js,script-update-interval=0
+// BoxJs 恢复 = type=cron,cronexp="0 0 0 * 1 *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js,script-update-interval=0
 
 [MITM]
 hostname= %APPEND% sub.store
