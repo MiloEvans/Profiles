@@ -1,7 +1,7 @@
 #!name=𝐉𝐃 - 𝐓𝐚𝐬𝐤
 #!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
 #!system=
-#!tag = type=cron,cronexp="* * * * * *",wake-system=1,timeout=3600,script-path=javescript,script-update-interval=0
+#!tag = type=cron,cronexp=* * * * * *,wake-system=1,timeout=3600,script-path=javescript,script-update-interval=0
 
 [Script]
 
