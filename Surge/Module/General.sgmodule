@@ -9,9 +9,6 @@ URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
 [Script]
 # > 去广告
-# >> 微信公众号
-# hostname = mp.weixin.qq.com
-微信公众号去广告 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0
 
 # >> 小程序纸塘&森图壁纸下载去广告
 # hostname = api.bspapp.com
@@ -70,4 +67,4 @@ Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/s
 force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com
+hostname = %APPEND% api.bspapp.com, *.baidu.com, i.weread.qq.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weixin110.qq.com, weather-data.apple.com, ap?.bilibili.com
