@@ -36,6 +36,7 @@
 # ag: avgle
 # jb: Jable
 # nv: Netflav
+# jh: Jav HD
  
 # > 默认搜索
 # bi: 必应
@@ -116,6 +117,9 @@
 
 # nv Netflav
 ^https:\/\/duckduckgo.com\/\?q=nv(\+|%20)([^&]+).* https://netflav.com/search?type=title&keyword=$2 302
+
+# jh Jav HD
+^https:\/\/duckduckgo.com\/\?q=jh(\+|%20)([^&]+).* https://www2.javhdporn.net/search/$2 302
 
 # > 默认搜索
 # bi 必应
