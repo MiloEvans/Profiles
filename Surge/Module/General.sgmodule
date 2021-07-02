@@ -9,6 +9,9 @@ URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
 [Script]
 # > 去广告
+# >> bilibili
+# hostname = app.bilibili.com
+Bilibili_开屏去广告 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com/x/v\d/splash/list,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/srk24/profile/master/js/bilibili_splash.js,script-update-interval=0
 
 # >> 小程序纸塘&森图壁纸下载去广告
 # hostname = api.bspapp.com
