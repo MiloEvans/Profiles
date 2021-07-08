@@ -14,7 +14,7 @@
 # qd: 起点
 # ys: 优书网
 # jl: javlibrary
-# jd: JavDB
+# jb: JavDB
 
 # > 翻译
 # trc: Google 译至中
@@ -70,8 +70,8 @@
 # jl javlibrary
 ^https:\/\/duckduckgo.com\/\?q=jl(\+|%20)([^&]+).* http://www.javlibrary.com/cn/vl_searchbyid.php?keyword=$2 302
 
-# jd JavDB
-^https:\/\/duckduckgo.com\/\?q=jd(\+|%20)([^&]+).* https://javdb.com/search?q=$2 302
+# jb JavDB
+^https:\/\/duckduckgo.com\/\?q=jb(\+|%20)([^&]+).* https://javdb.com/search?q=$2 302
 
 # > 翻译
 # trc Google 译至中
