@@ -5,6 +5,10 @@ rewrite_local
 
 MITM
 hostname:i.weread.qq.com
+
+Surge
+微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/weread.js,script-update-interval=0
+
 -----------------将军℡--------------------
 */
 var obj = JSON.parse($response.body);
