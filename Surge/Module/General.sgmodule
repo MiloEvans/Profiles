@@ -32,10 +32,6 @@ Bilibili_开屏去广告 = type=http-response,pattern=^https?:\/\/app\.bilibili\
 BaiduChangeUA = type=http-request,pattern=^https?:\/\/(?!d\.pcs).*(?<!map)\.baidu\.com,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/BaiduChangeUA.js,script-update-interval=0
 
 # > 破解
-# >> 微信阅读无限卡
-# hostname = i.weread.qq.com
-// 微信阅读无限卡 = type=http-response,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MiloEvans/Profiles/master/Surge/Scripts/weread.js,script-update-interval=0
-
 # >> 百度云会员
 # hostname = pan.baidu.com
 // 百度云会员 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
@@ -76,4 +72,4 @@ Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/s
 force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
 [MITM]
-hostname = %APPEND% www.google.cn, app.biliintl.com, api.bspapp.com, *.baidu.com, i.weread.qq.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weather-data.apple.com, ap?.bilibili.com
+hostname = %APPEND% www.google.cn, app.biliintl.com, api.bspapp.com, *.baidu.com, pan.baidu.com, mb3admin.com, api.m.jd.com, trade-acs.m.taobao.com, ios-h2.prod.ftl.netflix.com, weather-data.apple.com, ap?.bilibili.com
