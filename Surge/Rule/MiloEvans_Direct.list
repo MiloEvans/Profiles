@@ -1,6 +1,6 @@
 # > Fiction
-DOMAIN-SUFFIX,wenxuemi6.com
-DOMAIN-SUFFIX,wenxuemi.cc
+# DOMAIN-SUFFIX,wenxuemi6.com
+# DOMAIN-SUFFIX,wenxuemi.cc
 DOMAIN-SUFFIX,123wenxue.com
 DOMAIN-SUFFIX,biqusoso.com
 DOMAIN-SUFFIX,yuewen.xyz
@@ -15,11 +15,12 @@ DOMAIN-SUFFIX,yourenxsw.com
 DOMAIN-SUFFIX,dstiejuan.com
 # DOMAIN-SUFFIX,qqxsnew.com
 DOMAIN-SUFFIX,imiaobige.com
-DOMAIN-SUFFIX,soxs.cc
+# DOMAIN-SUFFIX,soxs.cc
 DOMAIN-SUFFIX,soxscc.org
 DOMAIN-SUFFIX,01xs.com
 DOMAIN-SUFFIX,00ksw.com
-DOMAIN-SUFFIX,ibooktxt.com
+# DOMAIN-SUFFIX,ibooktxt.com
+DOMAIN-SUFFIX,sbooktxt.com
 DOMAIN-SUFFIX,31xiaoshuo.com
 DOMAIN-SUFFIX,yawenba.net
 DOMAIN-SUFFIX,beqege.cc
