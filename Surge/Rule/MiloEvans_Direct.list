@@ -1,6 +1,6 @@
 # > Fiction
 # DOMAIN-SUFFIX,wenxuemi6.com
-# DOMAIN-SUFFIX,wenxuemi.cc
+# DOMAIN-SUFFIX,wenxuemi.cc //被墙
 DOMAIN-SUFFIX,123wenxue.com
 DOMAIN-SUFFIX,biqusoso.com
 DOMAIN-SUFFIX,yuewen.xyz
@@ -28,6 +28,6 @@ DOMAIN-SUFFIX,suyingwang.net
 DOMAIN-SUFFIX,81zw.com
 DOMAIN-SUFFIX,zhuiyo.com
 DOMAIN-SUFFIX,biqujia.com
-DOMAIN-SUFFIX,biquyue.com
+# DOMAIN-SUFFIX,biquyue.com //被墙
 DOMAIN-SUFFIX,xibige.com
 
