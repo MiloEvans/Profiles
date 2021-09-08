@@ -1,0 +1,6 @@
+#!name=Hijack-DNS
+#!desc=网关模式劫持 surge ios 的 DNS
+#!system=mac
+
+[General]
+hijack-dns = *:53
