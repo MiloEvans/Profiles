@@ -3,4 +3,4 @@
 #!system=ios
 
 [Rule]
-DOMAIN,haha.haha.com
+DOMAIN,haha.haha.com,DIRECT
