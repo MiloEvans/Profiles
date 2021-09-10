@@ -1,6 +1,0 @@
-#!name=uiui
-#!desc=𝑀𝑖𝑙𝑜𝐸𝑣𝑎𝑛𝑠
-#!system=ios
-
-[Rule]
-DOMAIN,uiui.uiui.com,DIRECT
