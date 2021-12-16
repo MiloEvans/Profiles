@@ -21,7 +21,7 @@ DOMAIN-SUFFIX,soxscc.org
 DOMAIN-SUFFIX,00ksw.com
 # DOMAIN-SUFFIX,ibooktxt.com
 # DOMAIN-SUFFIX,sbooktxt.com //被墙
-DOMAIN-SUFFIX,31xiaoshuo.com
+# DOMAIN-SUFFIX,31xiaoshuo.com //被墙
 DOMAIN-SUFFIX,yawenba.net
 DOMAIN-SUFFIX,beqege.cc
 DOMAIN-SUFFIX,suyingwang.net
