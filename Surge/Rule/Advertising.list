@@ -1,0 +1,5 @@
+# Speedtest
+DOMAIN-SUFFIX,doubleclick.net,REJECT-TINYGIF
+DOMAIN-SUFFIX,downdetector.com,REJECT-TINYGIF
+DOMAIN-SUFFIX,googlesyndication.com,REJECT-TINYGIF
+DOMAIN-SUFFIX,google-analytics.com,REJECT-TINYGIF
